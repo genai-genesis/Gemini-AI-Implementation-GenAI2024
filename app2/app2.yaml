@@ -1,0 +1,5 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT main:app
+service: app2-service
+instance_class: F2
+

@@ -1,0 +1,25 @@
+Redeploy your application: Sometimes, redeploying the application can fix the issue. 
+You can do this with the gcloud app deploy command.
+
+
+http://gen-ai-2024.ue.r.appspot.com/api/analyze
+
+streamlit run ingredients_ai.py
+
+
+descriptor:                  [C:\Users\danie\Documents\GenAI\app2\app2.yaml]
+source:                      [C:\Users\danie\Documents\GenAI\app2]
+target project:              [gen-ai-2024]
+target service:              [app2-service]
+target version:              [20240331t061956]
+target url:                  [https://app2-service-dot-gen-ai-2024.ue.r.appspot.com]
+target service account:      [gen-ai-2024@appspot.gserviceaccount.com]
+
+
+descriptor:                  [C:\Users\danie\Documents\GenAI\ai\app.yaml]
+source:                      [C:\Users\danie\Documents\GenAI\ai]
+target project:              [gen-ai-2024]
+target service:              [service1]
+target version:              [20240331t062058]
+target url:                  [https://service1-dot-gen-ai-2024.ue.r.appspot.com]
+target service account:      [gen-ai-2024@appspot.gserviceaccount.com]

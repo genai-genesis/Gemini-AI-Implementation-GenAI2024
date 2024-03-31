@@ -1,0 +1,21 @@
+JSON:
+  prompt = """
+  Analyze this text to find the names of the foods in the text. 
+  Write the food item and your estimate for the expiry date for that item when stored appropriately, in an array of objects format.
+  Use this example as context: [{name: 'bread', expiry: 10}, {name: 'apple', expiry: 8}, {name: 'coffee', expiry: 16}]
+  There are two properties. the name of the item with no adjectives in lowercase, 
+  and the number of days before it will go bad when stored appropriately as an integer.
+  """
+
+Diciotnary:
+    prompt = """
+  Analyze this text to find the names of the type of foods in the text. 
+  Write the food item and your generous estimate for the expiry date for that item, in a javascript format, where the key is the name of 
+  the item with no adjectives in lowercase, 
+  and the value corresponding to the key is the number of days it will go bad as an integer.
+  """
+
+
+Image:
+
+Given the user's input image of a receipt, identify each food item on the receipt, and predict its potential expiry date in days. Output a dictionary with the key as the food items in the receipt, as the corresponding item being the corresponding, generous predicted expiry dates as an integer
