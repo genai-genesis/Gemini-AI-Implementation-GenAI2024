@@ -7,10 +7,10 @@ from PIL import Image
 import io
 
 
-# Replace with your Vertex AI project ID
+#  Vertex AI project ID
 PROJECT_ID = "gen-ai-2024"
 
-# Region where your Vertex AI resources are located
+# Region where i set Vertex AI key
 REGION = "us-central1"
 # Initialize Vertex AI SDK
 vertexai.init(project=PROJECT_ID, location=REGION)
@@ -29,7 +29,7 @@ from vertexai.preview.generative_models import Part
 def generate_response(image_data):
   """Function to generate response based on an image."""
 
-  # Initialize the GenerativeModel with a specific model
+  # Initialize the GenerativeModel with pro vision model for the images 
   generative_multimodal_model = GenerativeModel("gemini-1.0-pro-vision-001")
 
   # Create a Part object with the image data and the content type
